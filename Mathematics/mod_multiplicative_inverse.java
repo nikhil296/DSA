@@ -8,10 +8,10 @@ class pair {
         this.gcd = gcd;
     }
 }
-// a = 959
-// M = 10000007 is giving wrong answer for the first method. bcz of "Long" issue.
-// 99
-// 1000000007 giving different answer. bcz of "Long" issue.
+            // a = 959
+            // M = 10000007 is giving wrong answer for the first method. bcz of "Long" issue.
+            // 99
+            // 1000000007 giving different answer. bcz of "Long" issue.
 class mod_multiplicative_inverse {
     public static void mmi_Naive(int a, int M) {
         for (int x = 1; x < M; x++) {
