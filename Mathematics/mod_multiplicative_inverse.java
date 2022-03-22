@@ -35,12 +35,19 @@ class mod_multiplicative_inverse {
         int a = sc.nextInt();
         int M = sc.nextInt();
         mmi_Naive(a, M);
-        pair ans = mmi(a, M);
-        if(ans.gcd != 1) {
+
+        // as mmi won't exist bcz (any_num % 1 = 0)
+        if(M <= 1) {
             System.out.println("MMI does not exists");
         }else {
-            int res = (ans.x % M + M) % M;
-            System.out.println("MMI is : "+res);
+            pair ans = mmi(a, M);
+            if(ans.gcd != 1) {
+                System.out.println("MMI does not exists");
+            }else {
+                int res = (ans.x % M + M) % M;
+                System.out.println("MMI is : "+res);
+            }
         }
+        
     }
 }
