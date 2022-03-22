@@ -1,3 +1,4 @@
+// Complexity = O(log max(a, b))
 class euclid {
     public static int gcd(int a, int b)
     {
@@ -7,11 +8,11 @@ class euclid {
     }
     public static void main(String[] args)
     {
-        int a = 10, b = 15, g;
+        int a = 959, b = 10000007, g;
         g = gcd(a, b);
         System.out.println("GCD(" + a +  " , " + b+ ") = " + g);
          
-        a = 35; b = 10;
+        a = 99; b = 1000000007;
         g = gcd(a, b);
         System.out.println("GCD(" + a +  " , " + b+ ") = " + g);
          

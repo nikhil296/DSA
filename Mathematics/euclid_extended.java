@@ -1,3 +1,4 @@
+// Complexity = O(log max(a, b))
 class pair {
     int x, y, gcd;
     public pair(int x1, int y1, int gcd1) {
