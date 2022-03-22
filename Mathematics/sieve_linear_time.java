@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 class sieve_linear_time {
     static ArrayList<Integer> prime = new ArrayList<>();
-    public static void sieve_n(int n) {
+    public static void sieveN(int n) {
         // The smallest prime factor array.
         int spf[] = new int[n+1];
         ArrayList<Integer> temp = new ArrayList<>();

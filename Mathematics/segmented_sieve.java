@@ -1,7 +1,7 @@
 import java.util.*;
 class segmented_sieve {
     static ArrayList<Long> prime = new ArrayList<>();
-    public static void sieve(int n) {
+    public static void sieveN(int n) {
         int spf[] = new int[n+1];
         ArrayList<Integer> temp = new ArrayList<>();
         for(int i = 2; i <= n; i++) {
@@ -53,7 +53,7 @@ class segmented_sieve {
         long l = sc.nextLong();
         long r = sc.nextLong();
         // we need prime numbers from "2 to sqrt(r)"
-        sieve((int)Math.sqrt(r));
+        sieveN((int)Math.sqrt(r));
         seg_sieve(l, r);
     }
 }
