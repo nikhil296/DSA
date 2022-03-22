@@ -1,3 +1,3 @@
-public class large_exponentiation {
+class large_exponentiation {
     
 }
