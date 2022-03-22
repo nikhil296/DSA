@@ -4,6 +4,16 @@ class prime_factorization {
     static int MAX = 1000001;
     static int spf[] = new int[MAX];
     public static void primeFactors(int n) {
+        // Prime Factorization using Sieve O(log n) for multiple queries.
+        // The precomputation for smallest prime factor is done in O(n log(log n)) in the main function.
+        ArrayList<Integer> pf = new ArrayList<>();
+        while(n > 1) {
+            pf.add(spf[n]);
+            n = n/spf[n];
+        }
+        System.out.println(pf);
+    }
+    public static void primeFactors(int n) {
         // complexity = O(log n)
         ArrayList<Integer> pf = new ArrayList<>();
         while(n % 2 == 0) {
@@ -20,16 +30,6 @@ class prime_factorization {
         // even now if "n" is not 1 then it has ben reduced to some other prime number that is > 2.
         if(n > 1){
             pf.add(n);
-        }
-        System.out.println(pf);
-    }
-    public static void primeFactors(int n) {
-        // Prime Factorization using Sieve O(log n) for multiple queries.
-        // The precomputation for smallest prime factor is done in O(n log(log n)) in the main function.
-        ArrayList<Integer> pf = new ArrayList<>();
-        while(n > 1) {
-            pf.add(spf[n]);
-            n = n/spf[n];
         }
         System.out.println(pf);
     }
