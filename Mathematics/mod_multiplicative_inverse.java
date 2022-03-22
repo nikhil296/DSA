@@ -36,7 +36,7 @@ class mod_multiplicative_inverse {
         int M = sc.nextInt();
         mmi_Naive(a, M);
 
-        // as mmi won't exist bcz (any_num % 1 = 0)
+        // For M = 1 mmi won't exist bcz (any_num % 1 = 0)
         if(M <= 1) {
             System.out.println("MMI does not exists");
         }else {
@@ -48,6 +48,5 @@ class mod_multiplicative_inverse {
                 System.out.println("MMI is : "+res);
             }
         }
-        
     }
 }
