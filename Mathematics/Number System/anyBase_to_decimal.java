@@ -1,4 +1,4 @@
-class anyBase_to_decimal {
+class anybase_to_decimal {
     public static void anybaseToDecimal(int num, int originBase) {
         System.out.print("Decimal form of "+num+" is ");
         int ans = 0;
